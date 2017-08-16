@@ -1,5 +1,10 @@
 # EndlessSummer
 
+Endless Summer is a non-linear video piece that keeps the main characters of American Pie in a state of partying-limbo ad infinitum. This project was originally built in openFrameworks for an installation and ported into a website after the show ended.
+
+[endless-summer.us](http://endless-summer.us)
+
+
 ## Web
 
 To rebuild:
