@@ -1,0 +1,5 @@
+.DS_Store
+openFrameworks/bin/data/
+node_modules/
+bower_components/
+dist/

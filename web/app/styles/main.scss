@@ -1,0 +1,122 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+  -webkit-transition: all 500ms cubic-bezier(0.47, 0, 0.745, 0.715);
+  transition:         all 500ms cubic-bezier(0.47, 0, 0.745, 0.715); 
+}
+
+#loading{
+    -webkit-transition: all 400ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition:         all 400ms cubic-bezier(0.47, 0, 0.745, 0.715); 
+}
+
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url(/images/theBoys_pr.mp4) no-repeat;
+    background-size: cover;
+    -webkit-transition: all 800ms cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    transition:         all 800ms cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+
+audio {
+	display: none;
+}
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+}
+
+@media screen and (max-width:1024px) {
+	video#bgvid { 
+		width: 100%;
+	}
+}
+@media screen and (orientation:landscape) and (max-width:1023px){
+	.img-responsive{
+		max-width: 50%;
+	}
+}
+
+//@media screen and (orientation:portrait) and (max-width:767px){
+//	.container{
+//		padding-top:40%;
+//	}
+//}

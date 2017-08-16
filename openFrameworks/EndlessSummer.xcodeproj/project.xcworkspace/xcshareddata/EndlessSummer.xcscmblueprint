@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BD6BB49505D1D95B9A2F1AD3003B988B3C2031B0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BD6BB49505D1D95B9A2F1AD3003B988B3C2031B0" : 9223372036854775807,
+    "8671D5E53E4C4F4D77CFBBE6EE595FBE78BE011E" : 9223372036854775807,
+    "BFCEBA68FA34CC9D42430E49FB09A6EA416EC05F" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9453AF69-AC2D-4B84-8AEA-A27EB37DE4B4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BD6BB49505D1D95B9A2F1AD3003B988B3C2031B0" : "EndlessSummer\/",
+    "8671D5E53E4C4F4D77CFBBE6EE595FBE78BE011E" : "..\/..\/addons\/ofxHAPAVPlayer",
+    "BFCEBA68FA34CC9D42430E49FB09A6EA416EC05F" : "EndlessSummer\/ofxHapPlayer\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "EndlessSummer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "EndlessSummer.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/gameoverhack\/ofxHAPAVPlayer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8671D5E53E4C4F4D77CFBBE6EE595FBE78BE011E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/organnoise\/endlessSummer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BD6BB49505D1D95B9A2F1AD3003B988B3C2031B0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/bangnoise\/ofxHapPlayer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BFCEBA68FA34CC9D42430E49FB09A6EA416EC05F"
+    }
+  ]
+}
