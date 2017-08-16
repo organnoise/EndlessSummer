@@ -23,4 +23,4 @@ To build dist:
 
 ## openFrameworks
 
-This project requires the ofxHapPlayer addon. Main video file not on github due to size, but it should be placed in bin/data/videos. 
+This project requires the ofxHapPlayer addon. Main video file not on github due to size, but it should be placed in ```bin/data/videos```. 
