@@ -9,20 +9,8 @@ Endless Summer is a non-linear video piece that keeps the main characters of Ame
 
 ## Web
 
-To rebuild:
-
-```npm install```
-
-```bower install```
-
-To hack:
-
-```gulp serve```
-
-To build dist:
-
-```gulp build```
+Simplified so no more gulp, npm, etc.
 
 ## openFrameworks
 
-This project requires the ofxHapPlayer addon. Main video file not on github due to size, but it should be placed in ```bin/data/videos```. 
+This project requires the ofxHapPlayer addon. Main video file not on github due to size, but it should be placed in ```bin/data/videos```.
