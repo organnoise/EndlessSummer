@@ -3,6 +3,10 @@ var player = document.getElementById('bgvid');
 var mp4Source = document.getElementById('mp4Source');
 var song = document.getElementById('song');
 var noise = document.getElementById('noise');
+const loading = document.getElementById('.loading-text');
+const button = document.querySelector('button');
+
+
 
 //Set Volume
 song.volume = 0.8;
@@ -14,16 +18,16 @@ var frame = 1/24.08;
 var left = 0,
 	right = 1;
 
-var Jim = 0, 
-	Kevin = 1, 
-	Oz = 2, 
+var Jim = 0,
+	Kevin = 1,
+	Oz = 2,
 	Finch = 3;
 
 var songVol = 0.8,
 	noiseVol = 0.5,
 	mute = true;
 
-//Create array of objects mirroring the struct style used in C++ version	
+//Create array of objects mirroring the struct style used in C++ version
 var clips = [
    clip('Kevin_1', 0, 32, right, Kevin),
    clip('Kevin_1r', 34, 65, left, Kevin),
@@ -59,31 +63,31 @@ document.addEventListener('keydown', function(event) {
 		mute = !mute;
 		song.volume = songVol * mute;
 		noise.volume = noiseVol * mute;
-	}  
+	}
 });
 
 //The Meat
 function update(){
 if(player.currentTime >= current.stop && loaded == true){
-			
+
 	        pOrientation = current.orientation;
 	        pCharacter = current.character;
 	        pChange = change;
-	
+
 	        while(change === pChange
 	              || clips[change].character === pCharacter
 	              || clips[change].orientation === pOrientation){
 					  //console.log(current);
-	                    rando();			
+	                    rando();
 	        }
 	        current = clips[change];
 			//console.log(current.name);
 	        player.currentTime = current.start;
-			
+
 	}
 }
 
-//This isn't that necessary 
+//This isn't that necessary
 function randomInt(min,max)
 {
     return Math.floor(Math.random()*(max-min+1)+min);
@@ -92,7 +96,7 @@ function randomInt(min,max)
 //This is somewhat like designing a struct
 //creates an object with info to be used in switching clips
 function clip(name, start, stop, orientation, character){
-	
+
 	var obj = {
 		name: name,
 		start: start*frame,
@@ -100,7 +104,7 @@ function clip(name, start, stop, orientation, character){
 		orientation: orientation,
 		character: character
 	};
-	
+
 	return obj;
 }
 
@@ -127,12 +131,28 @@ function loadVideo(){
 	    // not needed if autoplay is set for the video element
 		loaded = true;
 		//Get rid of the loading sign and show the boys
-		$('#loading').css('opacity','0');
-		$('#bgvid').css('opacity', '1');
-		$('body').css('background-color','black');
-		player.play();
-		song.play();
-		noise.volume = 0.5;
+		loadingText = $('.loading-text');
+
+		//Make 'loading' say 'play' with hover
+		loadingText.html(' play ');
+		loadingText.css('cursor','pointer');
+		loadingText.hover(() => {
+			loadingText.css('background','grey');
+		}, () => {
+			loadingText.css('background','none');
+		});
+
+		//Once loaded wait for the click event to start the video and audio
+		loadingText.click(() => {
+			loadingText.css('cursor','default');
+			$('#loading').css('opacity','0');
+			$('#bgvid').css('opacity', '1');
+			$('body').css('background-color','black');
+			player.play();
+			noise.play();
+			song.play();
+			noise.volume = 0.5;
+		});
 	   }
 	  }
 	xhr.send();
